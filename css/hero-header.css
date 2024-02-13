@@ -1,0 +1,224 @@
+
+
+a{
+    text-decoration: none;
+    color:initial;
+}
+ul{
+    list-style: none;
+    margin:0;
+    padding:0; 
+}
+body{
+    margin:0;
+    padding:0;
+}
+h1{
+    margin:0;
+    padding:0;
+}
+h2{
+    margin:0;
+    padding:0;
+}
+p{
+    margin:0;
+    padding:0;
+}
+.hero-section{
+    background: #FFB8CA;
+    
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;  
+}
+.hero-container{
+    position: relative;
+    z-index: 2;
+    padding-bottom: 60px;
+}
+
+
+.hero-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:40px;
+   
+}
+.header-list{
+    display:flex;
+    gap:35px;
+}
+
+.header-list-item{
+    color: #FFF;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.header-list-item-first{
+    color: #D41443;
+}
+.header-buy-button{
+    width: 159px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 22px;
+    background: #FFF;
+    color: #D41443;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-arrow{
+    font-size: 1.2em;
+    margin-left:10px;
+    }
+
+.hero-content-section{
+    padding-top:60px;
+}
+/* .hero-container{
+    
+    
+} */
+.hero-title-container{
+    display:flex;
+    justify-content: space-between;
+    
+}
+.hero-title-white{
+    color: #FFF;
+    font-family: "Titan One";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.52px;
+    text-transform: uppercase;
+    width:277px;
+    height:137px;
+}
+.hero-title-red{
+    color: #D41443;
+    font-family: "Titan One";
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90.5%;
+    letter-spacing: 2.32px;
+    text-transform: uppercase;
+}
+.hero-list-item{
+    position:relative;
+}
+.hero-white-circle{
+    position:absolute;
+    z-index:-1;
+    left:60px;
+}
+.hero-list-item-second{
+    padding-top:18px;
+}
+.hero-number-subtitle{
+    color: #D41443;
+        text-align: right;
+        font-family: "Titan One";
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.84px;
+        text-transform: uppercase;
+}
+.hero-text-subtitle{
+    color: #FFF;
+        text-align: right;
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+.hero-button-red{
+    width: 107px;
+    height: 40px;
+    border-radius: 20px;
+    background: #D41443;
+    border: none;
+    color: #FFF;
+        text-align: center;
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+.hero-button-white{
+    width: 138px;
+    height: 40px;
+    color: #D41443;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius:20px;
+    border:none;
+    margin-left:12px;
+}
+.hero-milk-photo-div{
+    margin-top:40px;
+    display:flex;
+    align-items: center;
+}
+.hero-milk-photo-paragraph{
+    color: #FFF;
+        font-family: "DM Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        width: 200px;
+        height: 78px;
+        position:relative;
+}
+.hero-right-arrow{
+    position:absolute;
+    top:98px;
+    left:0px;
+}
+
+.hero-background-circle{
+    width: 534px;
+    height: 534px;
+    border-radius: 50%;
+    background: #FFA5BA;
+    position:absolute;
+    top:56px;
+    left:567px;
+    z-index:-1;
+
+}
+.hero-icecream-photo{
+    margin-left:119px;
+    margin-top:54px;
+}
+.hero-girl-photo{
+    position:absolute;
+    bottom:0;
+    right:0px;
+}

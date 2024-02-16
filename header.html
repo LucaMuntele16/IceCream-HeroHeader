@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="/css/hero-header.css">
 </head>
-<body>
     <section class="hero-section">
         <div class="container hero-container">
            
@@ -37,7 +36,7 @@
                 </nav>
              </div>
              <div class="header-buttons">
-                <button type="menu" class="hamburger-menu-button">
+                <button type="menu" class="hamburger-menu-button" id="menu-icon" data-modal-open>
                     <i class="fas fa-bars hamburger-menu-icon"></i>
                 </button>
                 <button type="submit" class="header-buy-button">
@@ -167,5 +166,34 @@
             </div>
         </div>
     </section>
+    <!-- HAMBURGER MENU !!!  -->
+<div class="modal is-hidden" data-modal>
+    <div class="modal-content">
+        <button class="modal-close-button" type="button" data-modal-close>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="modal-close-button-svg">
+                <path d="M1.25928 1L14.7408 15" stroke="white" />
+                <path d="M1 14.7407L15 1.25924" stroke="white" />
+            </svg>
+        </button>
+            
+        <div class="header-buttons">
+                <button type="submit" class="modal-buy-button header-buy-button">
+                    Buy now
+                    <span class="button-arrow">></span>
+                </button>
+        </div>
+            <ul class="modal-header-list">
+                <li class="modal-header-list-item"><a href="" class="header-list-item header-list-item-first">Home</a></li>
+                <li class="modal-header-list-item"><a href="" class="header-list-item">About us</a></li>
+                <li class="modal-header-list-item"><a href="" class="header-list-item">How it's made?</a></li>
+                <li class="modal-header-list-item"><a href="" class="header-list-item">Our products</a></li>
+                <li class="modal-header-list-item"><a href="" class="header-list-item">Contact</a></li>
+            </ul>
+
+        
+    </div>
+</div>
+            
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

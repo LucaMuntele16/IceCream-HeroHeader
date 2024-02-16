@@ -25,6 +25,17 @@ p{
     margin:0;
     padding:0;
 }
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.is-hidden-menu {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
 .hero-section{
     background: #FFB8CA;
     
@@ -447,5 +458,224 @@ p{
         font-size: 14px;
         line-height: 176%;
         letter-spacing: 0.56px;
+    }
+     .hamburger-menu-button {
+        background-color: inherit;
+        border: none;
+        cursor: pointer;
+    }
+          .modal-content {
+            width: 254px;
+                height: 100%;
+                display: flex;
+                padding-top:58px;
+                align-items: center;
+                flex-direction: column;
+                gap:20px;
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                /* right: -254px; */
+                background-color: #333;
+                transition: right 0.3s ease-in-out;
+                background: #E17992;
+    
+          }
+        .modal {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(46, 47, 66, 0.4);
+                position: fixed;
+                top: 0;
+                z-index:10;
+                display: flex;
+                flex-direction: row-reverse;
+                }
+        .modal-close-button{
+            background-color: inherit;
+            border:none;
+            position:absolute;
+            top:20px;
+            right:32px;
+        }
+        .modal-header-list{
+            display:flex;
+            flex-direction: column;
+            width: 100%;
+        }
+       
+        .modal-header-list-item{
+            height:42px;
+            border:1px #E18298 solid;
+            align-items:center;
+            display:flex;
+            padding-left:20px;
+        }
+        .modal-buy-button{
+            width: 186px;
+                height: 44px;
+                flex-shrink: 0;
+        }
+}
+@media screen and (320px <=width <=768px) {
+    .header-list {
+        display: none;
+    }
+    .header-buy-button{
+        display: none;
+    }
+    .hero-list{
+        display:none;
+    }
+    .hero-milk-photo-div{
+        display:none;
+    }
+    .hero-girl-photo{
+        display:none;
+    }
+    .hero-section{
+        height:502px;
+    }
+     .hamburger-menu-button{
+        background: none;
+        border:none;
+        cursor:pointer;
+    }
+    .hamburger-menu-icon{
+        color:#D41443;
+        width: 20px;
+        height: 12px;
+    }
+    .hero-title-white{
+        font-size:26px;
+        letter-spacing: 1.04px;
+        width:218px;
+    }
+    .hero-title-red{
+        font-size:48px;
+        line-height: 96.5%;
+    }
+            .hero-button-red {
+            width: 61px;
+            height: 24px;
+            font-size: 8px;
+        }
+    
+        .hero-button-white {
+            width: 83px;
+            height: 24px;
+            font-size: 8px;
+        }
+    .hero-background-circle{
+        width: 346px;
+        height: 344px;
+        right:-62px;
+        top:83px;
+        left:unset;
+        
+        bottom:unset;
+    }
+    .hero-icecream-photo{
+        width: 171px;
+        height: 410px;
+        margin-left:81px;
+        margin-top:9px;
+        
+    }
+                .modal-content {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    padding-top: 58px;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 20px;
+                    overflow: hidden;
+                    position: fixed;
+                    top: 0;
+                    /* right: -254px; */
+                    background-color: #333;
+                    transition: right 0.3s ease-in-out;
+                    background: #E17992;
+        
+                }
+        
+                .modal {
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(46, 47, 66, 0.4);
+                    position: fixed;
+                    top: 0;
+                    z-index: 10;
+                    display: flex;
+                    flex-direction: row-reverse;
+                }
+        
+                .modal-close-button {
+                    background-color: inherit;
+                    border: none;
+                    position: absolute;
+                    top: 20px;
+                    right: 32px;
+                }
+        
+                .modal-header-list {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+        
+                .modal-header-list-item {
+                    height: 42px;
+                    border: 1px #E18298 solid;
+                    align-items: center;
+                    display: flex;
+                    padding-left: 20px;
+                }
+        
+                .modal-buy-button {
+                width: 209px;
+                height: 44px;
+                display:block;
+                }
+
+
+    /* PRODUCTS  */
+    .products-label{
+        font-size: 18px;
+    }
+    .products-title{
+        font-size: 34px;
+        letter-spacing: 1.36px;
+    }
+    .products-image{
+        width: 280px;
+            height: 280px;
+            flex-shrink: 0;
+    }
+    .products-image-card{
+        width: 280px;
+            height: 489px;
+            flex-shrink: 0;
+            margin-top:140px;
+    }
+    .products-list{
+        position:unset;
+        display:flex;
+        flex-direction:column;
+    }
+    .products-list-item{
+        position:relative;
+    }
+    .prodcuts-image-title{
+        font-size:20px;
+        letter-spacing:0.8px;
+    }
+    .products-image-paragraph{
+        font-size:14px;
+        line-height: 152%;
+        letter-spacing: 0.56px;
+        width: 216px;
+        height: 124px;
     }
 }

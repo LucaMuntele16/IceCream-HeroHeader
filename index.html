@@ -17,6 +17,7 @@
 </head>
     <section class="hero-section">
         <div class="container hero-container">
+            
            
             <header class="hero-header">
              <div>
@@ -39,7 +40,7 @@
                 <button type="menu" class="hamburger-menu-button" id="menu-icon" data-modal-open>
                     <i class="fas fa-bars hamburger-menu-icon"></i>
                 </button>
-                <button type="submit" class="header-buy-button">
+                <button type="submit" class="header-buy-button" data-modal-openx>
                     Buy now
                     <span class="button-arrow">></span>
                 </button>
@@ -177,7 +178,7 @@
         </button>
             
         <div class="header-buttons">
-                <button type="submit" class="modal-buy-button header-buy-button">
+                <button type="submit" class="modal-buy-button header-buy-button" data-modal-openx>
                     Buy now
                     <span class="button-arrow">></span>
                 </button>
@@ -189,11 +190,76 @@
                 <li class="modal-header-list-item"><a href="" class="header-list-item">Our products</a></li>
                 <li class="modal-header-list-item"><a href="" class="header-list-item">Contact</a></li>
             </ul>
-
-        
     </div>
 </div>
-            
+<!--Modal Window-->
+<div data-modalx class="open-button-hero is-hidden">
+    <div class="buy-modal">
+
+        <button type="button" data-modal-closex class="close-button-hero">x
+            <!--<svg width="8"  height="8" class="circle-image">
+                    <use href="./images/icons.svg#icon-close-b">
+                     </use>
+                </svg>-->
+        </button>
+
+        <p class="modal-paragraph-hero">Syper pyper Ice Cream</p>
+
+        <form>
+            <div class="modal-products-hero">
+                <ul class="list products-list-modal-hero">
+                    <li class="products-label-hero">
+                        <img src="./images/ProductsIceCream1.png" alt="Icecream Cone" width="100" height="100">
+                        <label for="products">
+                            <input type="text" name="products" id="products" placeholder="how many?" class="how-many-hero">
+                        </label>
+                    </li>
+                    <li class="products-label-hero">
+                        <img src="./images/ProductsIceCream2.png" alt="Ice Coffee Glass" width="100" height="100">
+                        <label for="products">
+                            <input type="text" name="products" id="products" placeholder="how many?" class="how-many-hero">
+                        </label>
+                    </li>
+
+                    <li class="products-label-hero">
+                        <img src="./images/ProductsIceCream3.png" alt="Milkshake Glass" width="100" height="100">
+                        <label for="products">
+                            <input type="text" name="products" id="products" placeholder="how many?" class="how-many-hero">
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-flex-hero">
+                <div class="label-name-div-hero">
+                    <label for="user-name" class="label-name">Name
+                    </label>
+                    <div class="div-input-icon-hero">
+                        <input type="text" name="user-name" id="user-name" class="input-user-name-hero">
+                    </div>
+                </div>
+                <div class="label-name-div-hero">
+                    <label for="user_phone" class="label-name-hero">Phone</label>
+                    <div class="div-input-icon-hero">
+                        <input type="text" name="Phone" id="user_phone" class="input-user-name-hero">
+                    </div>
+                </div>
+                <div class="label-name-div-hero">
+                    <label for="email" class="label-name-hero">Email</label>
+                    <div class="div-input-icon-hero">
+                        <input type="text" name="Email" id="email" class="input-user-name-hero">
+                    </div>
+                </div>
+                <div class="label-comment-hero">
+                    <label class="label-name" for="user-comment"></label>
+                    <textarea name="user-comment" id="user-comment" placeholder="Text input"
+                        class="input-user-name-hero">Write something and maybe we read this</textarea>
+                </div>
+                <button type="button" class="send-button-hero">I want that!</button>
+            </div>
+        </form>
+    </div>
+</div>
+
     <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

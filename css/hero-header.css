@@ -92,6 +92,7 @@ p{
     display:flex;
     justify-content: center;
     align-items: center;
+    cursor:pointer;
 }
 .button-arrow{
     font-size: 1.2em;
@@ -101,10 +102,9 @@ p{
 .hero-content-section{
     padding-top:60px;
 }
-/* .hero-container{
-    
-    
-} */
+.hamburger-menu-button{
+    display:none;
+}
 .hero-title-container{
     display:flex;
     justify-content: space-between;
@@ -317,6 +317,132 @@ p{
         height: 134px;
         width: 304px;
 }
+/* Modal Classes*/
+.open-button-hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 72px 24px 24px;
+    z-index:10;
+}
+
+.buy-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 408px;
+    min-height: 584px;
+    background: #fff5f6;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.close-button-hero {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: transparent;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #d41443;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+}
+
+.close-button-hero:hover,
+.close-button-hero:focus {
+    background-color: #ecebeb;
+    border: none;
+}
+.modal-products-hero{
+    display:flex;
+    justify-content: center;
+}
+.send-button-hero {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #d41443;
+    border-radius: 22px;
+    border-color: transparent;
+    cursor: pointer;
+    width: 176px;
+    height: 44px;
+    background-color: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+
+.send-button-hero:hover,
+.send-button-hero:focus {
+    background-color: #ecebeb;
+    border: none;
+}
+
+.modal-paragraph-hero {
+    color: #d41443;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+    text-align: center;
+
+}
+
+.how-many-hero {
+    max-width: 80px;
+    border-radius: 4px;
+    border-color: #FFA5BA;
+
+}
+
+
+.products-list-modal-hero {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    max-width: 360px;/
+}
+
+.container-flex-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-user-name-hero {
+    border-radius: 4px;
+    border-color: #FFA5BA;
+}
 
 @media screen and ( 768px <= width <= 1280px){
     .container{
@@ -334,6 +460,7 @@ p{
         background: none;
         border:none;
         cursor:pointer;
+        display: block;
     }
     .hamburger-menu-icon{
         color:#D41443;
@@ -459,10 +586,7 @@ p{
         line-height: 176%;
         letter-spacing: 0.56px;
     }
-     .hamburger-menu-button {
-        background-color: inherit;
-        border: none;
-        cursor: pointer;
+       
     }
           .modal-content {
             width: 254px;
@@ -516,7 +640,7 @@ p{
                 height: 44px;
                 flex-shrink: 0;
         }
-}
+
 @media screen and (320px <=width <=768px) {
     .header-list {
         display: none;
@@ -536,10 +660,17 @@ p{
     .hero-section{
         height:502px;
     }
+    .hero-content-section{
+        padding-top:80px;
+        display:flex;
+        flex-direction: column;
+        gap:20px;
+    }
      .hamburger-menu-button{
         background: none;
         border:none;
         cursor:pointer;
+        display: block;
     }
     .hamburger-menu-icon{
         color:#D41443;
@@ -565,6 +696,7 @@ p{
             width: 83px;
             height: 24px;
             font-size: 8px;
+            margin-left:9px;
         }
     .hero-background-circle{
         width: 346px;

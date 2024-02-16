@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="/css/hero-header.css">
 </head>
 <body>
@@ -35,7 +36,10 @@
                     </ul>
                 </nav>
              </div>
-             <div>
+             <div class="header-buttons">
+                <button type="menu" class="hamburger-menu-button">
+                    <i class="fas fa-bars hamburger-menu-icon"></i>
+                </button>
                 <button type="submit" class="header-buy-button">
                     Buy now
                     <span class="button-arrow">></span>
@@ -69,7 +73,7 @@
                     <button type="submit" class="hero-button-white">How it's made?</button>
                 </div>
                 <div class="hero-milk-photo-div">
-                    <img src="./images/MilkPhoto.png" width="213px" height="216px">
+                    <img src="./images/MilkPhoto.png" width="213px" height="216px" class="milk-photo">
                         <p class="hero-milk-photo-paragraph">Indulge in a scoop of ice cream made with passion and treat your taste buds to an unforgettable experience!
                             <img src="./images/arrow-right.png" width="26px" height="26px" class="hero-right-arrow">
                             <!-- metoda neortodoxa dar functioneaza -->
@@ -90,13 +94,78 @@
          </div>
     </section>
     <!-- Products  -->
-    <!-- <section class="products-sections">
+    <section class="products-section">
         <div class="container">
-            <label>
-                100% natural
-            </label>
-            <h1>products</h1>
+            <div class="products-title">
+                <label class="products-label">
+                    100% natural
+                </label>
+                <h1 class="products-title">products</h1>
+            </div>
+            <div class="products-content">
+                <ul class="products-list">
+                    <li class="products-list-item">
+                        <div class="products-image-container">
+                            <img src="./images/ProductsIceCream1.png" width="368px" height="394px" class="products-image">
+                            <div class="products-image-card">
+                                <div class="products-image-card-content">
+                                <h2 class="prodcuts-image-title">ice cream</h2>
+                                <svg xmlns="http://www.w3.org/2000/svg" id="dots" width="25" height="6">
+                                        <g fill="#fff">
+                                            <ellipse cx="12.418" cy="3" rx="2.866" ry="3" />
+                                            <ellipse cx="2.866" cy="3" rx="2.866" ry="3" />
+                                            <ellipse cx="21.97" cy="3" rx="2.866" ry="3" />
+                                        </g>
+                                    </svg>
+                                    <p class="products-image-paragraph">Indulge in our rich and creamy ice cream, handcrafted with all-natural ingredients and available in a variety of
+                                        flavors.</p>
+                                        <img src="./images/arrow-right.png" width="38px" height="40px"  >
+                                    </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="products-list-item">
+                        <div class="products-image-container">
+                            <img src="./images/ProductsIceCream2.png" width="368px" height="394px" class="products-image">
+                            <div class="products-image-card second-card">
+                                <div class="products-image-card-content">
+                                    <h2 class="prodcuts-image-title">ice coffee</h2>
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="dots" width="25" height="6">
+                                        <g fill="#fff">
+                                            <ellipse cx="12.418" cy="3" rx="2.866" ry="3" />
+                                            <ellipse cx="2.866" cy="3" rx="2.866" ry="3" />
+                                            <ellipse cx="21.97" cy="3" rx="2.866" ry="3" />
+                                        </g>
+                                    </svg>
+                                    <p class="products-image-paragraph">Refresh and energize with our perfectly brewed iced coffee, made with high-quality beans and served over ice.</p>
+                                    <img src="./images/arrow-right.png" width="38px" height="40px">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                <li class="products-list-item">
+                    <div class="products-image-container">
+                        <img src="./images/ProductsIceCream3.png" width="368px" height="394px" class="products-image">
+                        <div class="products-image-card third-card">
+                            <div class="products-image-card-content">
+                                <h2 class="prodcuts-image-title">milkshakes</h2>
+                                <svg xmlns="http://www.w3.org/2000/svg" id="dots" width="25" height="6">
+                                    <g fill="#fff">
+                                        <ellipse cx="12.418" cy="3" rx="2.866" ry="3" />
+                                        <ellipse cx="2.866" cy="3" rx="2.866" ry="3" />
+                                        <ellipse cx="21.97" cy="3" rx="2.866" ry="3" />
+                                    </g>
+                                </svg>
+                                <p class="products-image-paragraph">Satisfy your sweet tooth with our thick, made with premium ice cream, topped with whipped cream and your favorite
+                                toppings.</p>
+                                <img src="./images/arrow-right.png" width="38px" height="40px">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                </ul>
+            </div>
         </div>
-    </section> -->
+    </section>
 </body>
 </html>

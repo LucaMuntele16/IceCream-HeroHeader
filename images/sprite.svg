@@ -19,3 +19,9 @@
 <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path id="Vector" d="M1 1L5 5L1 9" stroke="#D41443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="dots" width="25" height="6"><g fill="#fff"><ellipse cx="12.418" cy="3" rx="2.866" ry="3"/><ellipse cx="2.866" cy="3" rx="2.866" ry="3"/><ellipse cx="21.97" cy="3" rx="2.866" ry="3"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" id="hamburger-menu">
+  <path d="M0 1H20" stroke="#D41443"/>
+  <path d="M0 7H20" stroke="#D41443"/>
+  <path d="M0 13H20" stroke="#D41443"/>
+</svg>

@@ -49,6 +49,7 @@ p{
     position: relative;
     z-index: 2;
     padding-bottom: 60px;
+    overflow-x: clip;
 }
 
 
@@ -189,6 +190,7 @@ p{
     border-radius:20px;
     border:none;
     margin-left:12px;
+    background-color:#FFF;
 }
 .hero-milk-photo-div{
     margin-top:40px;
